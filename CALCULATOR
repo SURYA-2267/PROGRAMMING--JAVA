@@ -1,0 +1,41 @@
+import java.util.*;
+public class calculator
+{
+    public static void main(String args[])
+    {
+        Scanner in=new Scanner(System.in);
+        System.out.println("Enter 3 values for the calculation and note the first number should be greater than other 2 numbers and second number should be less than the first number and the third number should be the smallest");
+        double a=in.nextDouble();
+        double b=in.nextDouble();
+        double c=in.nextDouble();
+        double d;
+        System.out.println("For the calculations:1 for addition,2 for subtraction,3 for multiplication,4 for division ");
+        int choice=in.nextInt();
+        switch(choice)
+        {
+            case 1:
+                System.out.println("You have chosen addition");
+                 d=a+b+c;
+                System.out.println("The sum is "+d);
+                break;
+                case 2:
+                System.out.println("You have chosen subtraction");
+                 d=a-b-c;
+                System.out.println("The result is "+d);
+                break;
+                case 3:
+                System.out.println("You have chosen multiplication");
+                 d=a*b*c;
+                System.out.println("The product is "+d);
+                break;
+                case 4:
+                System.out.println("You have chosen division");
+                 d=(a/c)/b;
+                System.out.println("The  is "+d);
+                break;
+                default:
+                System.out.println("Wrong Choice");
+        }
+    }
+        
+}
